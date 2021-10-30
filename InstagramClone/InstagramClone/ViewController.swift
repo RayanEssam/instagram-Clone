@@ -10,7 +10,11 @@ import UIKit
 class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource  {
     
     var instagramAccount = [
-    Account(accountName: "rayantaj", profileImage: "avatar", imagesArr: ["jed1" , "jed2" , "jed3"])
+    Account(accountName: "rayantaj", profileImage: "avatar", imagesArr: ["jed1" , "jed2" , "jed3"]),
+    
+    Account(accountName: "ahmed231", profileImage: "avatar", imagesArr: ["rud1" , "rud2" , "jed2"]),
+    
+    Account(accountName: "tariqalghamdi", profileImage: "avatar", imagesArr: ["jed2" , "jed2" , "jed3"])
 
     ]
     
@@ -25,9 +29,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         
         let customPostCell = tableView.dequeueReusableCell(withIdentifier: "postCustomCell") as! postTableViewCell
         
-        customPostCell.accountName.text = instagramAccount[indexPath.row].accountName
-        
+//        customPostCell.accountName.text = instagramAccount[indexPath.row].accountName
+        customPostCell.nameButton.titleLabel?.text = instagramAccount[indexPath.row].accountName
         customPostCell.avatar.image = UIImage(named: instagramAccount[indexPath.row].profileImage)
+        
+//        customPostCell.sb = storyboard!
         
 //        customPostCell.avatar.layer.masksToBounds = true
 //        customPostCell.avatar.layer.cornerRadius = customPostCell.bounds.width / 1
@@ -39,7 +45,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 650
+        return 575
     }
 
    

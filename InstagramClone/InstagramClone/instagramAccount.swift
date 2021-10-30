@@ -9,9 +9,9 @@ import Foundation
 
 class Account {
     
-    var accountName : String
-    var profileImage : String
-    var imagesArr : [String]
+    var accountName : String = ""
+    var profileImage : String = ""
+    var imagesArr : [String] = [""]
     
     
     init(accountName : String ,profileImage : String,imagesArr : [String]) {
@@ -19,6 +19,10 @@ class Account {
         self.accountName = accountName
         self.profileImage = profileImage
         self.imagesArr = imagesArr
+        
+    }
+    
+    init() {
         
     }
     

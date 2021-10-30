@@ -15,6 +15,8 @@
 		CF483D09272D2A0600673554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF483D07272D2A0600673554 /* LaunchScreen.storyboard */; };
 		CF483D11272D301700673554 /* instagramAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF483D10272D301700673554 /* instagramAccount.swift */; };
 		CF483D13272D34A600673554 /* postTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF483D12272D34A600673554 /* postTableViewCell.swift */; };
+		CF483D15272D442E00673554 /* personalAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF483D14272D442E00673554 /* personalAccountViewController.swift */; };
+		CF483D1B272D554200673554 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF483D1A272D554200673554 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		CF483D0A272D2A0600673554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF483D10272D301700673554 /* instagramAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagramAccount.swift; sourceTree = "<group>"; };
 		CF483D12272D34A600673554 /* postTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postTableViewCell.swift; sourceTree = "<group>"; };
+		CF483D14272D442E00673554 /* personalAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalAccountViewController.swift; sourceTree = "<group>"; };
+		CF483D1A272D554200673554 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +48,7 @@
 		CF483CF0272D2A0200673554 = {
 			isa = PBXGroup;
 			children = (
-				CF483D12272D34A600673554 /* postTableViewCell.swift */,
-				CF483D10272D301700673554 /* instagramAccount.swift */,
+				CF483D1A272D554200673554 /* CollectionViewCell.swift */,
 				CF483CFB272D2A0200673554 /* InstagramClone */,
 				CF483CFA272D2A0200673554 /* Products */,
 			);
@@ -62,6 +65,9 @@
 		CF483CFB272D2A0200673554 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				CF483D14272D442E00673554 /* personalAccountViewController.swift */,
+				CF483D12272D34A600673554 /* postTableViewCell.swift */,
+				CF483D10272D301700673554 /* instagramAccount.swift */,
 				CF483CFC272D2A0200673554 /* AppDelegate.swift */,
 				CF483CFE272D2A0200673554 /* SceneDelegate.swift */,
 				CF483D00272D2A0200673554 /* ViewController.swift */,
@@ -146,6 +152,8 @@
 			files = (
 				CF483D11272D301700673554 /* instagramAccount.swift in Sources */,
 				CF483D01272D2A0200673554 /* ViewController.swift in Sources */,
+				CF483D15272D442E00673554 /* personalAccountViewController.swift in Sources */,
+				CF483D1B272D554200673554 /* CollectionViewCell.swift in Sources */,
 				CF483CFD272D2A0200673554 /* AppDelegate.swift in Sources */,
 				CF483CFF272D2A0200673554 /* SceneDelegate.swift in Sources */,
 				CF483D13272D34A600673554 /* postTableViewCell.swift in Sources */,
