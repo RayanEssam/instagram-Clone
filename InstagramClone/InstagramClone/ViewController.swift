@@ -48,6 +48,22 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         return 575
     }
 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let acc = Account(accountName: "irayantaji", profileImage: "avatar", imagesArr: ["jed1" , "jed2" , "jed3", "rud1" , "rud2" , "jed2","jed1" , "jed2" , "jed3", "rud1" , "rud2" , "jed2","jed1" , "jed2" , "jed3", "rud1" , "rud2" , "jed2"])
+        
+        let vc   = self.storyboard?.instantiateViewController(withIdentifier: "personalAccountViewController") as! personalAccountViewController
+        
+        
+        vc.AccountObj = acc
+        
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
+    }
    
     
     override func viewDidLoad() {
@@ -55,6 +71,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         // Do any additional setup after loading the view.
         tableViewController.delegate = self
         tableViewController.dataSource = self
+        title = "Instagram"
         
     }
 

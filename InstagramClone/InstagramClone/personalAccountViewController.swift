@@ -10,10 +10,10 @@ import UIKit
 class personalAccountViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     
-    let acc = Account(accountName: "irayantaji", profileImage: "avatar", imagesArr: ["jed1" , "jed2" , "jed3", "rud1" , "rud2" , "jed2","jed1" , "jed2" , "jed3", "rud1" , "rud2" , "jed2","jed1" , "jed2" , "jed3", "rud1" , "rud2" , "jed2"])
+ 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return acc.imagesArr.count
+        return AccountObj.imagesArr.count
     }
     
    
@@ -29,11 +29,24 @@ class personalAccountViewController: UIViewController , UICollectionViewDelegate
         let customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCellID", for: indexPath as IndexPath) as! CollectionViewCell
         
         
-        customCell.imageCell.image = UIImage(named: acc.imagesArr[indexPath.row])
+        customCell.imageCell.image = UIImage(named: AccountObj.imagesArr[indexPath.row])
         
         return customCell
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "imageViewController") as! imageViewController
+        
+        
+        vc.image =  UIImage(named: AccountObj.imagesArr[indexPath.row])!
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     
     var AccountObj = Account()
     
@@ -46,7 +59,7 @@ class personalAccountViewController: UIViewController , UICollectionViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        accountName.text = acc.accountName
+        accountName.text = AccountObj.accountName
         
         collectionView.dataSource = self
         collectionView.delegate = self

@@ -17,6 +17,7 @@
 		CF483D13272D34A600673554 /* postTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF483D12272D34A600673554 /* postTableViewCell.swift */; };
 		CF483D15272D442E00673554 /* personalAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF483D14272D442E00673554 /* personalAccountViewController.swift */; };
 		CF483D1B272D554200673554 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF483D1A272D554200673554 /* CollectionViewCell.swift */; };
+		CFAB970B272E809200CEE622 /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB970A272E809200CEE622 /* imageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CF483D12272D34A600673554 /* postTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postTableViewCell.swift; sourceTree = "<group>"; };
 		CF483D14272D442E00673554 /* personalAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalAccountViewController.swift; sourceTree = "<group>"; };
 		CF483D1A272D554200673554 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CFAB970A272E809200CEE622 /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				CF483D05272D2A0600673554 /* Assets.xcassets */,
 				CF483D07272D2A0600673554 /* LaunchScreen.storyboard */,
 				CF483D0A272D2A0600673554 /* Info.plist */,
+				CFAB970A272E809200CEE622 /* imageViewController.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				CF483D1B272D554200673554 /* CollectionViewCell.swift in Sources */,
 				CF483CFD272D2A0200673554 /* AppDelegate.swift in Sources */,
 				CF483CFF272D2A0200673554 /* SceneDelegate.swift in Sources */,
+				CFAB970B272E809200CEE622 /* imageViewController.swift in Sources */,
 				CF483D13272D34A600673554 /* postTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
